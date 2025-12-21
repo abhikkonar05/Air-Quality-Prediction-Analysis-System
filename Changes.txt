@@ -57,6 +57,7 @@ This repository contains:
 regression_models.joblib
 
 classification_models.joblit
+Deployed in : https://air-quality-prediction-analysis-system-5grvvnhnkwenzbg4he2nwd.streamlit.app/
 
 scaler.joblib
 
