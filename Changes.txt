@@ -1,0 +1,63 @@
+🔧 Code & Architecture Improvements
+
+Replaced pickle-based model loading with joblib, following scikit-learn best practices.
+
+Fixed model serialization issues so trained models load correctly during inference.
+
+Added proper .gitignore to exclude:
+
+.joblib model artifacts
+
+virtual environments
+
+Python cache files
+
+🖥️ Streamlit UI Integration
+
+Added a fully functional Streamlit web interface (app.py).
+
+Users can now:
+
+Input environmental and sensor values
+
+Predict PM2.5 concentration (regression)
+
+Predict Air Quality status (classification: Good / Poor)
+
+Integrated Hugging Face Hub model downloading directly into the app for seamless deployment.
+
+☁️ Model Hosting & Deployment
+
+Uploaded trained models and scaler to Hugging Face Hub.
+
+Removed model binaries from GitHub to keep the repository lightweight.
+
+Ensured the app dynamically downloads the latest models at runtime.
+
+📦 Dependency & Project Cleanup
+
+Updated requirements.txt to include:
+
+streamlit
+
+joblib
+
+huggingface_hub
+
+Improved project structure for deployment on Streamlit Cloud / Hugging Face Spaces.
+
+🔗 Hugging Face Model Repository Link
+
+Your trained models are stored here:
+
+👉 https://huggingface.co/hridayeshdebsarma6/Air-Quality-Prediction-Analysis-System
+
+This repository contains:
+
+regression_models.joblib
+
+classification_models.joblit
+
+scaler.joblib
+
+These files are automatically downloaded by the Streamlit app during runtime.
